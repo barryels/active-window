@@ -1,5 +1,6 @@
 #!/usr/bin/env osascript
 global frontApp, frontAppName, windowTitle
+set frontAppName to ""
 set windowTitle to ""
 
 tell application "System Events"
@@ -7,7 +8,7 @@ tell application "System Events"
   set frontAppName to name of frontApp
 
   if exists process "ScreenSaverEngine"
-    set frontApp to "device.Screensaver"
+    set frontAppName to "device.Screensaver"
   else
     tell process frontAppName
       tell (first window whose value of attribute "AXMain" is true)
