@@ -7,7 +7,8 @@
     "version:bump:patch": "npm version --no-git-tag-version patch",
     "version:bump:minor": "npm version --no-git-tag-version minor",
     "postversion": "node ./node_scripts/postversion/index.js",
-    "run:mac": "osascript ./scripts/mac.scpt"
+    "test:mac:script": "sh ./scripts/mac.sh",
+    "test:mac:monitor:single": "node ./tests/mac-once.js"
   },
   "contributors": [
     {
