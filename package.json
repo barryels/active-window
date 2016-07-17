@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Get active window title.",
   "main": "index.js",
+  "scripts": {
+    "run:mac": "osascript ./scripts/mac.scpt"
+  },
   "contributors":[{ "name" : "Jason Stallings "
                   , "email" : "jason@stallin.gs"
                   , "url" : ""},
